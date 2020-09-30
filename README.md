@@ -82,6 +82,15 @@ hpropagate({
 });
 ```
 
+- to hide the propagation of `x-correlation-id` in the response:
+
+```javascript
+hpropagate({
+    hideCorrelationIdInResponses: true
+});
+```
+
+
 ## The How
 
 Inspiration from this [talk](https://youtu.be/A2CqsR_1wyc?t=5h26m40s) ([Slides and Code](https://github.com/watson/talks/tree/master/2016/06%20NodeConf%20Oslo)) and this [module](https://github.com/guyguyon/node-request-context)
